@@ -132,6 +132,7 @@ const displayPlayers = () => {
         playerLastName.textContent = lastName;
         playerDate.textContent = date;
         playerScore.textContent = score;
+        playerScore.setAttribute('class', 'score');
 
         increaseScoreBtn.textContent = '+5';
         decreaseScoreBtn.textContent = '-5';
@@ -155,35 +156,35 @@ const displayPlayers = () => {
 
 }
 
-const removePlayer = (player, index) => {
-    index = players.indexOf(player);
+const removePlayer = (player) => {
+   console.log(player)
+   const index = players.indexOf(player);
+   console.log(index)
     if (index !== -1) {
         players.splice(index, 1);
 
-
-    }
+    }   
     displayPlayers()
     
-    console.log(players)
 }
 
-const addScore = (player, index) => {
-    index = players.indexOf(player);
+const addScore = (player) => {
+    const index = players.indexOf(player);
     if (index !== -1) {
         players[index].score += 5;
 
     }
-    displayPlayers()
+    displayPlayers();
  
 }
 
-const decreaseScore = (player, index) => {
-    index = players.indexOf(player);
+const decreaseScore = (player) => {
+    const index = players.indexOf(player);
     if (index !== -1) {
         players[index].score -= 5;
 
     }
-    displayPlayers()
+    displayPlayers();
  
 }
 
