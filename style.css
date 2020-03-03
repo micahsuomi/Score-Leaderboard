@@ -188,7 +188,7 @@ input {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        font-size: 21px;
+        font-size: 13px;
     }
 
     input {
@@ -207,12 +207,15 @@ input {
     }
 
     .fa-trash-alt, .btn-score {
-        margin: 1.3rem;
+        padding: .7rem;
+        margin: 0.3rem;
+        font-size: 13px;
         
     }
 
-    .score {
-        font-size: 22px;
+    .btn-score {
+        font-size: 10px;
+
     }
 
     .delete-add-remove {
