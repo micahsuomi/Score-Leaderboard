@@ -176,8 +176,19 @@ input {
 }
 
 @media screen and (max-width: 500px) {
+
     .author {
         flex-wrap: wrap;
+    }
+    .players-wrapper {
+        padding: 1rem 0rem;
+
+    }
+    .player {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        font-size: 21px;
     }
 
     input {
@@ -188,8 +199,11 @@ input {
     }
 
     .player-container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
         width: 22rem;
+        padding: 2rem;
+
     }
 
     .fa-trash-alt, .btn-score {
@@ -198,7 +212,7 @@ input {
     }
 
     .score {
-        font-size: 30px;
+        font-size: 22px;
     }
 
     .delete-add-remove {

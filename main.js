@@ -127,6 +127,7 @@ const displayPlayers = () => {
         let deleteIconBtn = createNode('i');
         let increaseScoreBtn = createNode('button');
         let decreaseScoreBtn = createNode('button');
+        playerDetails.setAttribute('class', 'player');
         deleteIconBtn.setAttribute('class', 'fas fa-trash-alt'); 
         playerFirstName.textContent = firstName;
         playerLastName.textContent = lastName;
